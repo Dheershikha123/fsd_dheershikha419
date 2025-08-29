@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Web Page</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            border-collapse:collapse ;
+
+        }
+        td{
+            background-color:rgb(250, 255, 196);
+            /* 0-250  */
+        }
+        th,td{
+            border: 2px solid black;
+            border-radius:10px;
+            text-align: center;
+            border-style: dotted;
+            padding: 50px;
+            border-spacing:50px;
+            
+        }
+        td:nth-child(even){
+            background-color:rgb(112, 209, 231);
+
+        }
+        td:hover{
+            background-color:yellow;
+
+        }
+        tr:nth-child(odd){
+            background-color:rgb(228, 132, 237);
+        }
+    </style>
     </head>
     <body>
         <h1>Welcome here</h1>
@@ -20,18 +51,35 @@
         <h5>hello</h5>
         <h6>good morning</h6>
 
-        <table>
+        <table style="width:40px">
+            <caption>student details</caption>
+            <!-- <colgroup>
+                < colspan="1" style="background-color: cornflowerblue;">
+            </colgroup> -->
             <tr>
-                <th>s.no</th>
-                <th>name</th>
+                <!-- <th>s.no</th> -->
+                <th colspan="2">name</th>
                 <th>rollno</th>
 
             </tr>
             <tr>
                 <td>1</td>
-                <td>Dheershikha</td>
+                <td >Dheershikha</td>
                 <td>419</td>
             </tr>
         </table>
+
+        <ol>
+         <li>laptop</li>
+         <li>notebooks</li>
+
+        </li>
+
+        <ul>
+            <li>mobilephone</li>
+            <li>bag</li>
+            <li>benches</li>
+            <li>students</li>
+        </li>
     </body>
 </html>
