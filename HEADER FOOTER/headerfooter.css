@@ -1,0 +1,104 @@
+/* Reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+@import url(https://fonts.google.com/specimen/Roboto);
+
+/* body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+} */
+ body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: black;
+    color:whitesmoke;
+    padding:10px 0px;
+    text-align:center;
+    font-size:30px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+header h1{
+    margin:0px;
+    font-size:24px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+
+}
+
+main {
+    flex: 1;
+    padding: 40px;
+    margin: 0;
+    background-color: gold;
+    color: black;
+    overflow: auto;
+}
+/* footer {
+    background-color: black;
+    color: whitesmoke;
+    padding: 40px 0 0 0;
+    text-align: center;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex-shrink: 0;
+    margin-top: auto;
+} */
+ footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.social-icon a{
+    color:whitesmoke;
+    text-decoration: none;
+    margin:0px 10px;
+    font-size:20px;
+    transition:color 0.3s ease;
+
+}
+/* .social-icon a:hover{
+    color:greenyellow;
+} */
+    .social-icon a.youtube:hover{
+        font-size:40px;
+        margin:40px 5px;
+        color:crimson;
+    }
+        .social-icon a.linkedin:hover{
+        font-size:40px;
+        margin:40px 5px;
+        color:cornflowerblue;
+    }
+@media (max-width:600px) {
+    body{
+        font-size:14px;
+    }
+    header,footer{
+        font-size:20px;
+    }
+    main{
+        padding:20px 10px;
+    }
+
+}
